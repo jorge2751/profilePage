@@ -4,35 +4,46 @@
   font-family: "Roboto", sans-serif;
 }
 
-body .nav {
+body .display {
+  display: flex;
+  margin-top: 80px;
+  justify-content: center;
+}
+body .display img {
+  border-radius: 50%;
+}
+body .display .nav {
   background-color: gray;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 10px 15px 10px 40px;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
 }
-body .nav h1 {
-  padding: 0;
+body .display .nav h1 {
   color: white;
 }
-body .nav .nav-links {
+body .display .nav .nav-links {
   display: flex;
   align-items: center;
 }
-body .nav .nav-links li {
+body .display .nav .nav-links li {
   margin: 15px 20px;
   font-size: 1.2em;
   list-style: none;
 }
-body .nav .nav-links .active {
+body .display .nav .nav-links .active {
   font-weight: bold;
 }
-body .nav .nav-links a {
+body .display .nav .nav-links a {
   font-style: normal;
   text-decoration: none;
   color: #fff;
 }
-body .nav .nav-links .btn {
+body .display .nav .nav-links .btn {
   background-color: teal;
   color: #fff;
   font-size: 1.2em;
@@ -41,9 +52,6 @@ body .nav .nav-links .btn {
   border: 5px solid black;
   box-shadow: 6px 4px black;
 }
-body .display {
-  display: flex;
-}
 body .display .main_container {
   display: flex;
   flex: 3;
@@ -51,6 +59,7 @@ body .display .main_container {
 }
 body .display .main_container .card_container {
   border: 5px solid rgba(0, 0, 0, 0.5);
+  margin: 20px;
 }
 body .display .main_container .card_container .aqua {
   background-color: rgb(0, 134, 237);
@@ -88,7 +97,9 @@ body .display .main_container .card_container a {
   align-items: center;
 }
 body .display .main_container .education {
+  background-color: blue;
   height: 400px;
+  margin: 20px;
 }
 body .display .side_nav {
   display: flex;
@@ -98,8 +109,10 @@ body .display .side_nav {
 body .display .side_nav .requests {
   background-color: red;
   height: 400px;
+  margin: 20px;
 }
 body .display .side_nav .connections {
   background-color: red;
   height: 400px;
+  margin: 20px;
 }/*# sourceMappingURL=style.css.map */
