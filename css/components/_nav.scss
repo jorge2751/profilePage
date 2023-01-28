@@ -1,0 +1,42 @@
+@use "../abstracts";
+
+.nav {
+    background-color: gray;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px 10px 40px;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    h1 {
+        color: white;
+    }
+    .nav-links {
+        display: flex;
+        align-items: center;
+        li {
+            margin: 15px 20px;
+            font-size: 1.2em;
+            list-style: none;
+        }
+        .active {
+            font-weight: bold;
+        }
+        a {
+            font-style: normal;
+            text-decoration: none;
+            color: #fff;
+        }
+        .btn {
+            background-color: teal;
+            color: #fff;
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 2px 10px;
+            border: 5px solid black;
+            box-shadow: 6px 4px black;
+        }
+    }
+}
