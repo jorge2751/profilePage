@@ -10,13 +10,15 @@
 <body>
     <div class="display">
         <div class="nav">
-            <h1 class="nav-title">Profile</h1>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#" class="active">My Profile</a></li>
-                <li><a href="#">Find Connections</a></li>
-                <li><button class="btn">Sign Out</button></li>
-            </ul>
+            <div class="left">
+                <h1 class="nav-title">Profile</h1>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#" class="active">My Profile</a></li>
+                    <li><a href="#">Find Connections</a></li>
+                </ul>
+            </div>
+            <button class="btn">Sign Out</button>
         </div> 
         <div class="main_container">
             <div class="card_container">
@@ -39,15 +41,73 @@
                 </div>
             </div>
             <div class="education">
-                <h3>Education</h3>
+                <header>
+                    <h2>Education</h2>
+                </header>
+                <div class="educationEntry">
+                    <h3>Coding Dojo</h3>
+                    <p class="date">Dec 2019 - Mar 2020</caption>
+                    <p class="points">Triple blackbelt in Python, MERN, and C#...</p>
+                </div>
             </div>
         </div>
         <div class="side_nav">
             <div class="requests">
-                <h3>Connection Requests</h3>
+                <header>
+                    <h3>Connection Requests</h3>
+                </header>
+                <div class="friendCard">
+                    <div class="friendAvatar">
+                        <img src="./images/todd-s.jpg" alt="" srcset="">
+                        <h3>Todd E.</h3>
+                    </div>
+                    <div class="acceptDecline">
+                        <img src="./icons/accept-circle.png" alt="" srcset="">
+                        <img src="./icons/close-circle.png" alt="" srcset="">
+                    </div>
+                </div>
+                <div class="friendCard">
+                    <div class="friendAvatar">
+                        <img src="./images/phil-s.jpg" alt="" srcset="">
+                        <h3>Phil K.</h3>
+                    </div>
+                    <div class="acceptDecline">
+                        <img src="./icons/accept-circle.png" alt="" srcset="">
+                        <img src="./icons/close-circle.png" alt="" srcset="">
+                    </div>
+                </div>
             </div>
             <div class="connections">
-                <h3>Your Connections</h3>
+                <header>
+                    <h3>Your Connections</h3>
+                </header>
+                <div class="friendCard">
+                    <div class="friendAvatar">
+                        <img src="./images/adrien-s.jpg" alt="" srcset="">
+                        <h3>Adrien S.</h3>
+                    </div>
+                </div>
+                <div class="friendCard">
+                    <div class="friendAvatar">
+                        <img src="./images/alayne-s.jpg" alt="" srcset="">
+                        <h3>Alayne S.</h3>
+                    </div>
+                </div>
+                <div class="friendCard">
+                    <div class="friendAvatar">
+                        <img src="./images/anne-s.jpg" alt="" srcset="">
+                        <h3>Anne S.</h3>
+                    </div>
+                </div>
+                <div class="friendCard">
+                    <div class="friendAvatar">
+                        <img src="./images/arry-s.jpg" alt="" srcset="">
+                        <h3>Arry S.</h3>
+                    </div>
+                </div>
+                <div class="viewMore">
+                    <a href="#">View More</a>
+                </div>
             </div>
         </div>
     </div>

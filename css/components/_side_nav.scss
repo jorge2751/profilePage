@@ -1,15 +1,25 @@
+@use '../abstracts' as a;
+
 .side_nav {
     display: flex;
     flex: 1;
     flex-direction: column;
     padding: 0 25px 0 0;
     .requests {
-        background-color: red;
-        height: 400px;
-        margin-bottom: 25px;
+        @include a.secondaryCard;
+        .friendCard {
+            @include a.friendCard;
+        }
     }
     .connections {
-        background-color: red;
-        height: 400px;
+        @include a.secondaryCard;
+        .friendCard {
+            @include a.friendCard;
+        }
+        .viewMore {
+            padding: 10px;
+            font-size: 1.7em;
+            border: 3px solid rgba(0,0,0,0.5);
+        }
     }
 }
