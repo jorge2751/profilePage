@@ -1,5 +1,5 @@
 @use "./abstracts" as a;
-@import "./components";
+@use "./components";
 
 * {
     margin: 0;
@@ -9,9 +9,6 @@
 
 .display {
     display: flex;
-    margin-top: 80px;
+    padding-top: 115px;
     justify-content: center;
-    img {
-        border-radius: 50%;
-    }
 }
